@@ -177,8 +177,9 @@ pre {
  * Icons
  */
 .icon {
-    display: inline-block;
     vertical-align: middle;
+    display: inline-block;
+    padding-right: 4px;
     > svg {
         width: 16px;
         height: 16px;
@@ -193,9 +194,13 @@ pre {
  * Instagram Icon
  */
 
-.ig-b-16 {
-    width: 16px;
-    height: 16px;
+.icon--instagram {
+    @extend .icon;
+    > svg {
+        path {
+            fill: #3f729b;
+        }
+    }
 }
 
 .username {

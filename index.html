@@ -2,6 +2,7 @@
 layout: default
 ---
 {% include calc_root.html %}
+<script defer src="{{ root }}/scripts/index.js"></script>
 <div class="home">
   {% for gallery in site.galleries %}
   <div class="gallery-panel">
@@ -12,5 +13,3 @@ layout: default
   </div>
   {% endfor %}
 </div>
-
-<script src="{{ root }}/scripts/index.js"></script>
